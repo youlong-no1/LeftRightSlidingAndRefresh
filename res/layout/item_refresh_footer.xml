@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:paddingBottom="15px"
+    android:paddingTop="20px" >
+
+    <ProgressBar
+        android:id="@+id/pull_to_load_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="20px"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pull_to_load_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="20px"
+        android:gravity="center"
+        android:src="@drawable/ic_pulltorefresh_arrow_up"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/pull_to_load_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/pull_to_refresh_footer_pull_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
